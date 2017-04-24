@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<link rel="stylesheet" type="text/css" href="css/product.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="header-list">
+					<h2 class="logo f-l"><a href="QQmusic.html"><img src="download-img/logo.png"/></a></h2>
+					<div class="dongtai f-l">
+						<a href="#">产品动态</a>
+						<a href="download.html">下载</a>
+					</div>
+					<a class="MAC f-r" href="#">轻听介绍</a>
+					<a class="MAC f-r" href="#">MAC版介绍</a>
+					<a class="PC f-r" href="#">PC版介绍</a>
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<div class="banner-1" id="ban-1">
+				<div class="watch">
+					<div class="ten">
+						
+					</div>
+					<div class="second">
+						
+					</div>
+					<div class="needle">
+						
+					</div>
+				</div>
+				<div class="content">
+					<h1>用PC听歌</h1>
+					<h1>加速你的QQ等级</h1>
+					<h2>登陆账号听歌60分钟，等级加速0.5天</h2>
+					<a class="download" href="#">立即下载</a>
+				</div>
+			</div>
+			<div class="banner-2" id="ban-2">
+				<div class="content">
+					<h1>极速下载</h1>
+					<h1>无网络也能想听就听</h1>
+					<a class="download" href="#">立即下载</a>
+				</div>
+			</div>
+			<div class="banner-3" id="ban-3">
+				<div class="content">
+					<h1>百变播放器</h1>
+					<h1>不变好声音</h1>
+					<a class="download" href="#">立即下载</a>
+				</div>
+			</div>
+			<div class="banner-4" id="ban-4">
+				<div class="content">
+					<h1>歌词海报</h1>
+					<h1>用音乐记录生活</h1>
+					<a class="download" href="#">立即下载</a>
+				</div>
+			</div>
+			<div class="banner-btn">
+				<span class="line"></span>
+				<a class="btn-pc" onclick="btn1()" id="btn1"></a>
+				<a class="btn-mac" onclick="btn2()" id="btn2"></a>
+				<a class="btn-iphone" onclick="btn3()" id="btn3"></a>
+				<a class="btn-andriod" onclick="btn4()" id="btn4"></a>
+				<span class="btn-down"></span>
+			</div>
+			<div class="star-1"></div>
+	   	 	<div class="star-2"></div>
+	   	 	<div class="star-3"></div>
+		</div>
+		<div class="ad1">
+			<div class="ad1-title">
+				<h1>1500万正版歌曲</h1>
+				<h2>国内唯一千万级版权超级平台</h2>
+				<h2>你想听的都在这里</h2>
+			</div>
+			<span class="btn-down"></span>
+		</div>
+		<div class="ad2">
+			<div class="ad2-title">
+				<h1>社交互动</h1>
+				<h1>分享你的音乐感动</h1>
+				<h2>歌曲海报记录生活，单曲弹幕邂逅共鸣</br>更多惊喜等你来玩！</h2>
+			</div>
+			<div class="ad2-phone">
+				<div class="screen-1">
+					
+				</div>
+				<div class="screen-2">
+					
+				</div>
+			</div>
+			<span class="btn-down"></span>
+		</div>
+		<div class="ad3">
+			<div class="ad3-title">
+				<h1>智能推荐</h1>
+				<h1>随时遇见喜欢的音乐</h1>
+				<h2>懂你的猜你喜欢，最新最热独家首发、排行榜、</br>电台，全方位的	音乐推荐都在这里！</h2>
+			</div>
+			<div class="ad3-phone">
+				<div class="ad3-screen">
+					
+				</div>
+			</div>
+			<span class="btn-down"></span>
+		</div>
+		<div class="ad4">
+			<div class="ad4-title">
+				<h1>多终端云同步</h1>
+				<h1>设备切换音乐仍在</h1>
+				<h2>只需一个账号，即可实现多终端音乐同步，</br>个人音乐随时随地畅享！</h2>
+			</div>
+			<div class="ad4-phone">
+				
+			</div>
+			<div class="ad4-pc">
+				<div class="ad4-pc-keyboard">
+					
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Copyright © 1998 - 2017</p>
+			<p>腾讯公司  <a href="#">版权所有</a> <a href="#">腾讯网络文化经营许可证</a></p>
+		</div>
+		<script>
+			var jump1 = document.getElementById("ban-1")
+			var jump2 = document.getElementById("ban-2")
+			var jump3 = document.getElementById("ban-3")
+			var jump4 = document.getElementById("ban-4")
+			var color1 = document.getElementById("btn1")
+			var color2 = document.getElementById("btn2")
+			var color3 = document.getElementById("btn3")
+			var color4 = document.getElementById("btn4")
+			function btn1(){
+				jump1.style.display="block";
+				jump2.style.display="none";
+				jump3.style.display="none";
+				jump4.style.display="none";
+				color1.style.opacity="1";
+				color2.style.opacity=".4";
+				color3.style.opacity=".4";
+				color4.style.opacity=".4";
+			}
+			function btn2(){
+				jump1.style.display="none";
+				jump2.style.display="block";
+				jump3.style.display="none";
+				jump4.style.display="none";
+				color1.style.opacity=".4";
+				color2.style.opacity="1";
+				color3.style.opacity=".4";
+				color4.style.opacity=".4";
+			}
+			function btn3(){
+				jump1.style.display="none";
+				jump2.style.display="none";
+				jump3.style.display="block";
+				jump4.style.display="none";
+				color1.style.opacity=".4";
+				color2.style.opacity=".4";
+				color3.style.opacity="1";
+				color4.style.opacity=".4";
+			}
+			function btn4(){
+				jump1.style.display="none";
+				jump2.style.display="none";
+				jump3.style.display="none";
+				jump4.style.display="block";
+				color1.style.opacity=".4";
+				color2.style.opacity=".4";
+				color3.style.opacity=".4";
+				color4.style.opacity="1";
+			}
+		</script>
+	</body>
+</html>

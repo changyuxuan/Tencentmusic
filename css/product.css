@@ -1,0 +1,606 @@
+.f-l{
+	float: left;
+}
+.f-r{
+	float: right;
+}
+.clearfix{
+	clear: both;
+}
+body{
+	margin: 0;
+	position: relative;
+	min-width: 1200px;
+}
+ul,li{
+	list-style: none;
+}
+li{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+.container{
+	width: 1200px;
+	margin: 0 auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+.contain{
+	width: 996px;
+	margin: 0 auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+.header-list{
+	position: relative;
+    margin: 17px auto;
+    width: 996px;
+    height: 46px;
+}
+.logo{
+	margin-right: 80px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 80px;
+    background: rgba(0,0,0,.3);
+    z-index: 99;
+}
+.dongtai>a{
+	float: left;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 80px;
+    line-height: 40px;
+}
+.dongtai>a:nth-child(1){
+	color: #31c27c;
+	font-size: 21px;
+}
+.PC,.MAC{
+	margin-left: 27px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+}
+.banner{
+	position: relative;
+	overflow: hidden;
+}
+.banner-1,.banner-2,.banner-3,.banner-4{
+	position: relative;
+	height: 650px;
+}
+.banner-1{
+	background: url(../product-img/banner_pc.jpg)  no-repeat;
+	background-size: cover;
+	display: block;
+}
+.banner-2{
+	background: url(../product-img/banner_mac.jpg)  no-repeat;
+	background-size: cover;
+	display: none;
+}
+.banner-3{
+	background: url(../product-img/banner_iphone.jpg) no-repeat;
+	background-size: cover;
+	display: none;
+}
+.banner-4{
+	background:  url(../product-img/banner_android.jpg)  no-repeat;
+	background-size: cover;
+	display: none;
+}
+.watch{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -530px;
+    width: 476px;
+    height: 478px;
+    background-image: url(../product-img/watch_bg.png);
+}
+.ten{
+	position: absolute;
+    top: 320px;
+    left: 204px;
+    width: 40px;
+    height: 50px;
+    background-image: url(../product-img/watch_numb.png);
+    animation: ten 1.5s steps(6) both;
+}
+@keyframes ten{
+	0% {
+	    background-position: 0 0;
+	}
+	100% {
+	    background-position: 0 -300px;
+	}
+}
+.second{
+    position: absolute;
+    top: 320px;
+    left: 248px;
+    width: 40px;
+    height: 50px;
+    background-image: url(../product-img/watch_numb.png);
+    animation: second .5s steps(10) 3;
+}
+@keyframes second{
+	0% {
+	    background-position: 0 0;
+	}
+	100% {
+	    background-position: 0 -500px;
+	}
+}
+.needle{
+	position: absolute;
+    top: 220px;
+    left: 220px;
+    width: 131px;
+    height: 105px;
+    background-image: url(../product-img/img_index.png);
+    background-position: -448px -824px;
+    animation: needle 2s both;
+    transform-origin: 24px 24px;
+}
+@keyframes needle{
+	0% {
+    transform: rotate(-252deg);
+	}
+	70% {
+	    transform: rotate(3deg);
+	}
+	80% {
+	    transform: rotate(-2deg);
+	}
+	90% {
+	    transform: rotate(1deg);
+	}
+	100% {
+	    transform: rotate(0);
+	}
+}
+.star-1,.star-2,.star-3{
+	position: absolute;
+    width: 171px;
+    height: 168px;
+    background-image: url(../download-img/star.png);
+}
+.star-1{
+    top: 84px;
+    left: 172px; 
+    animation: star-1 4.5s both infinite linear;
+}
+.star-2{
+	top: 0;
+	right: 0;
+	animation: star-2 4s both infinite linear;
+}
+.star-3{
+    top: 300px;
+    left: 700px;
+    animation: star-3 5s both infinite linear;
+}
+@keyframes star-1{
+	0% {
+	    opacity: 0;
+	    transform: translate(250px,-237px);
+	}
+	12% {
+	    opacity: 1;
+	    transform: translate(100px,-95px);
+	}
+	100%, 24% {
+	    opacity: 0;
+	    transform: translate(0,0);
+	}
+}
+@keyframes star-2{
+	0% {
+	    opacity: 0;
+	    transform: translate(200px,-200px);
+	}
+	50% {
+	    opacity: 1;
+	    transform: translate(400px,-350px);
+	}
+	100% {
+	    opacity: 0;
+	    transform: translate(0,0);
+	}
+}
+@keyframes star-3{
+	0% {
+		opacity: 0;
+	    transform: translate(250px,-237px);
+	}
+	12% {
+		opacity: 1;
+	    transform: translate(100px,-95px);
+	}
+	100%, 24% {
+		opacity: 0;
+	    transform: translate(0,0);
+	}
+}
+.banner-1 .content{
+	position: absolute;
+    top: 110px;
+    right: 130px;
+}
+.banner-2 .content{
+	position: absolute;
+    top: 141px;
+    right: 34px;
+}
+.banner-3 .content{
+	position: absolute;
+    top: 141px;
+    right: 314px;
+}
+.banner-4 .content{
+	position: absolute;
+    top: 141px;
+    right: 174px;
+}
+h1{
+	color: #FFFFFF;
+	font-size: 70px;
+	font-weight: 100;
+	margin: 0;
+}
+h2{
+	color: #FFFFFF;
+	font-weight: 100;
+	margin: 0;
+}
+.download{
+	position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 12px;
+    margin-left: -2px;
+    width: 293px;
+    height: 69px;
+    text-indent: -99em;
+    overflow: hidden;
+    z-index: 9;
+    background-image: url(../product-img/img_index.png);
+    background-position: -372px -735px;
+}
+.banner-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 190px;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+.line{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: .12;
+    overflow: hidden;
+}
+.banner-btn a{
+	display: inline-block;
+    line-height: 999px;
+    overflow: hidden;
+    width: 110px;
+    height: 170px;
+    margin-right: 185px;
+    position: relative;
+    vertical-align: top;
+}
+.btn-pc{
+	opacity: 1;
+}
+.btn-mac{
+	opacity: .4;
+}
+.btn-iphone{
+	opacity: .4;
+}
+.btn-andriod{
+	opacity: .4;
+}
+.banner-btn>a:nth-child(5){
+	margin-right: 0;
+}
+.btn-pc,.btn-mac,.btn-iphone,.btn-andriod{
+	background-image: url(../product-img/img_index.png);
+	cursor: pointer;
+}
+.btn-pc{
+	background-position: -336px -824px;
+}
+.btn-mac{
+	background-position: -224px -824px;
+}
+.btn-iphone{
+	background-position: -112px -824px;
+}
+.btn-andriod{
+ 	background-position: 0 -824px;
+}
+.btn-down{
+	position: absolute;
+    bottom: 32px;
+    left: 50%;
+    margin-left: -18px;
+    width: 36px;
+    height: 20px;
+    background-image: url(../product-img/img_index.png);
+    background-position: -1036px -147px;
+    z-index: 9;
+    animation: arrow 1.5s infinite both 2s;
+}
+@keyframes arrow{
+	0% {
+	    opacity: 0;
+	    transform: translate3d(0,-8px,0);
+	}
+	60% {
+	    opacity: 1;
+	    transform: translate3d(0,0,0);
+	}
+	100% {
+	    opacity: 0;
+	    transform: translate3d(0,8px,0);
+	}
+}
+.ad1{
+	position: relative;
+	width: 100%;
+    height: 1069px;
+    background-image: url(../img/bg_index_new.jpg);
+    background-repeat: repeat;
+    margin-top: -100px;
+    z-index: -10;
+}
+.ad1-title{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin-top: 500px;
+}
+.ad2{
+	position: relative;
+	height: 900px;
+	background: url(../product-img/bg_lyric.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.ad2-title{
+	position: absolute;
+	top:320px;
+	left: 120px;
+	text-align: left;
+}
+.ad2-phone{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 50px;
+    margin-top: -430px;
+    width: 580px;
+    height: 892px;
+    background-image: url(../product-img/lyric_phonebox.png);
+    opacity: 0;
+    animation: phone-pic 2s both;
+    transform-origin: 0 50%;
+}
+.screen-1{
+	position: absolute;
+    top: 138px;
+    left: 99px;
+    width: 350px;
+    height: 604px;
+    background: url(../product-img/lyric_phone1.jpg) no-repeat;
+    transform: rotate(7.5deg);
+    opacity: 0;
+    animation: screen-1 2s both;
+}
+.screen-2{
+	position: absolute;
+    top: 138px;
+    left: 99px;
+    width: 350px;
+    height: 604px;
+    background: url(../product-img/lyric_phone2.jpg) no-repeat;
+    transform: rotate(7.5deg);
+    opacity: 0;
+    animation: screen-2 1.5s linear both 2.2s;
+}
+@keyframes phone-pic{
+	0% {
+	    opacity: 0;
+	    transform: translateX(60px);
+	}
+	80% {
+	    opacity: 1;
+	}
+	100% {
+	    opacity: 1;
+	    transform: translateX(0);
+	}
+}
+@keyframes screen-1{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+@keyframes screen-2{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.ad3{
+	position: relative;
+	height: 900px;
+	background: url(../product-img/bg_like.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.ad3-title{
+	position: absolute;
+	top:320px;
+	right: 120px;
+	text-align: left;
+}
+.ad3-phone{
+	position: absolute;
+    top: 0;
+    left: 100px;
+    width: 450px;
+    height: 778px;
+    background-image: url(../product-img/like_phonebox.png);
+    animation: ad3-phone both 2s;
+    transform-origin: 90% 50%;
+}
+.ad3-screen{
+	position: absolute;
+    top: 176px;
+    left: 60px;
+    width: 316px;
+    height: 425px;
+    overflow: hidden;
+    background: url(../product-img/like_phone.jpg) no-repeat;
+    transform: rotate(-5.5deg);
+    animation: ad3-screen 1.5s linear forwards 2.5s;
+}
+@keyframes ad3-phone{
+	0% {
+	    opacity: 0;
+	    transform: translateX(-60px);
+	}
+	80% {
+	    opacity: 1;
+	}
+	100% {
+	    opacity: 1;
+	    transform: translateX(40px);
+	}
+}
+@keyframes ad3-screen{
+	0% {
+	    background-position: 0 0;
+	}
+	100% {
+	    background-position: 0 -210px;
+	}
+}
+.ad4{
+	position: relative;
+	height: 900px;
+	background: url(../product-img/bg_synchro.jpg) no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.ad4-title h1,.ad4-title h2{
+	color: #000000;
+	font-weight: 400;
+}
+.ad4-title{
+	position: absolute;
+	top: 150px;
+	left: 100px;
+}
+.ad4-phone{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: 0;
+    width: 255px;
+    height: 329px;
+    background-image: url(../product-img/synchro_phone.png);
+    animation: ad4-phone 3s both .5s;
+}
+@keyframes ad4-phone{
+	0% {
+	    opacity: 0;
+	    transform: translateX(-60px);
+	}
+	80% {
+	    opacity: 1;
+	}
+	100% {
+	    opacity: 1;
+	    transform: translateX(0);
+	}
+}
+.ad4-pc{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -392px;
+    width: 620px;
+    height: 784px;
+    background: url(../product-img/synchro_mac1.png) no-repeat;
+    animation: ad4-pc 2s both 0s;
+}
+@keyframes ad4-pc{
+	0% {
+	    opacity: 0;
+	    transform: translateX(60px);
+	}
+	80% {
+	    opacity: 1;
+	}
+	100% {
+	    opacity: 1;
+	    transform: translateX(0);
+	}
+}
+.ad4-pc-keyboard{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 620px;
+    height: 376px;
+    background: url(../product-img/synchro_mac2.png) no-repeat;
+}
+.footer{
+	position: absolute;
+	padding: 14px 0;
+    bottom: 0;
+    left: 0;
+    height: 44px;
+    width: 100%;
+    min-width: 1200px;
+    background: rgba(0,0,0,.3);
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.footer p{
+	margin-top: 0;
+}
+.footer a:hover{
+	text-decoration: underline;
+}

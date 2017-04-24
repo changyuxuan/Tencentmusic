@@ -1,0 +1,156 @@
+.conter{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+body{
+	min-width: 1201px;
+}
+.top-pic{
+	width: 190px;
+	height: 52px;
+}
+.qqmusic-title{
+	width: 190px;
+	height: 90px;
+}
+.qqmusic-logo{
+	width: 190px;
+	height: 52px;
+	vertical-align:middle;
+	display: inline-block;
+}
+.top-nav{
+	font-size: 18px;
+	float: left;
+	position: absolute;
+    left: 225px;
+    top: 0;
+}
+.top-nav li{
+	float: left;
+	height: 90px;
+	line-height: 90px;
+	padding:0 20px 0 20px;	
+}
+.top-nav li+li:hover{
+	color: #31C27C;
+}
+.qqmusic-title a{
+	line-height: 90px;
+	display: inline-block;
+	height: 90px;
+}
+.fist-li{
+	background-color:#31c27c;
+	color: #fff;
+}
+
+/*↑头部*/
+.mybody {
+	background: url(../img/bg_profile_unlogin.jpg) 50% no-repeat;
+	height: 922px;
+	width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+.mymusic-line{
+	width: 735px;
+	height: 64px;
+	background-image: url(../img/profile_tit.png);
+	margin: 0 auto;
+	/*margin-top: 350px;*/
+	opacity: 0;
+	animation-name:anm;
+	animation-timing-function:linear;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+	animation-duration: 1s
+}
+.mymusic-link{
+	width: 345px;
+	height: 30px;
+	background-image: url(../img/profile_tit.png);
+	background-position: 0 -70px;
+	margin: 30px auto;
+	opacity: 0;
+	animation-name:anm1;
+	animation-timing-function:ease;
+	animation-delay: 1.25s;
+	animation-fill-mode: forwards;
+	animation-duration: 1s
+	
+}
+.mybody a{
+	font-size: 20px;
+	height: 48px;
+	width: 128px;
+	text-align: center;
+	line-height: 48px;
+	background-color: #31C27C;
+	border: 1px solid #31C27C;
+	margin: 0 auto;
+	display: block;
+	padding-left: 23px;
+	padding-right: 23px;
+	color: #FFFFFF;
+	border-radius: 3px;
+	opacity: 0;
+	animation-name:anm1;
+	animation-timing-function:ease-out;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+	animation-duration: 1s
+}
+
+@keyframes anm{
+	from{margin-top: 450px;
+	opacity: 0;}
+	to{margin-top: 350px;
+	opacity: 1;}
+	}
+@-webkit-keyframes anm{
+	from{margin-top: 450px;
+	opacity: 0;}
+	to{margin-top: 350px;
+	opacity: 1;}
+}
+@-moz-keyframes anm{
+	from{margin-top: 450px;
+	opacity: 0;}
+	to{margin-top: 350px;
+	opacity: 1;}
+}
+@-o-keyframes anm{
+	from{margin-top: 450px;
+	opacity: 0;}
+	to{margin-top: 350px;
+	opacity: 1;}
+}
+@-ms-keyframes anm{
+	from{margin-top: 450px;
+	opacity: 0;}
+	to{margin-top: 350px;
+	opacity: 1;}
+	}
+@keyframes anm1{
+	from{opacity: 0;}
+	to{opacity: 1;}
+	}
+@-webkit-keyframes anm1{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-moz-keyframes anm1{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-o-keyframes anm1{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-ms-keyframes anm1{
+	from{opacity: 0;}
+	to{opacity: 1;}	
+	}
+	
