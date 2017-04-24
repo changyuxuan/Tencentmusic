@@ -124,7 +124,7 @@
 						<div class="album-pic">
 							<img src="img/222222.jpg"/>
 						</div>
-						<span class="play"></span>
+						<span class="play" onclick="play()"></span>
 						<div class="album-info">
 							<p><a class="album-name" href="#">Freedom<span class="add"></span></a></p>
 							<p><a class="singer" href="#">张赫宣</a></p>
@@ -599,9 +599,10 @@
 				</div>
 			</div>
 		</div>
-		<audio>  
-                <source src="说散就散.mp3" type="audio/mp3"></source> 
+		<audio id="music">  
+                <source src="说散就散.mp3" type="audio/mp3" ></source> 
           </audio>
+        <script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
 		<script>
 			var jump = document.getElementById("hot-list")
 			function myfun() {
@@ -618,6 +619,19 @@
 			var quxiao = document.getElementById("chongzhi")
 			function myquxiao() {
 				quxiao.style.display="none";
+			}
+			var music = document.getElementById("music");
+			var flag2 = 1;
+			function play() {
+				if(flag2 == 1){
+					music.play();
+					flag2 = 0;
+				}
+				else {
+					music.pause();
+					flag2 = 1;
+				}
+				
 			}
 		</script>
 	</body>
